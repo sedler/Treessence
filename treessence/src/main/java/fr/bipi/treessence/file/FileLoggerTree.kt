@@ -30,7 +30,7 @@ import java.util.logging.Logger
 @Suppress("unused")
 class FileLoggerTree @JvmOverloads constructor(
     private val logger: Logger,
-    private val fileHandler: FileHandler?,
+    val fileHandler: FileHandler?,
     private val path: String,
     private val nbFiles: Int,
     priority: Int,
